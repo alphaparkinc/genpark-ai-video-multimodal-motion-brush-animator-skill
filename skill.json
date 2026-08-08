@@ -1,0 +1,37 @@
+{
+  "name": "genpark-ai-video-multimodal-motion-brush-animator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multimodal image-to-video motion control, camera trajectory & motion brush animator.",
+  "author": "genpark",
+  "category": "media",
+  "tags": [
+    "ai-video",
+    "motion-brush",
+    "camera-trajectory",
+    "keyframe-animation"
+  ],
+  "inputs": {
+    "input_image_path": {
+      "type": "string"
+    },
+    "camera_motion": {
+      "type": "string"
+    },
+    "motion_brush_mask": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "rendered_video_url": {
+      "type": "string"
+    },
+    "frame_rate": {
+      "type": "integer"
+    },
+    "motion_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
